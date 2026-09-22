@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, TrendingUp, TrendingDown, Activity, VolumeUp } from 'lucide-react';
+import { ArrowLeft, TrendingUp, TrendingDown, Activity, Volume } from 'lucide-react';
 import Card from '../components/Card';
 import ChartContainer from '../components/ChartContainer';
 import InputGroup from '../components/InputGroup';

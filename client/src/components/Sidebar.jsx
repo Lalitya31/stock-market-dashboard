@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
   Home, 
-  Stock, 
+  LayoutDashboard, 
   PieChart, 
   Wallet, 
   TrendingUp, 
@@ -10,7 +10,8 @@ import {
   List,
   User,
   Menu,
-  X
+  X,
+  Activity
 } from 'lucide-react';
 
 /**
@@ -21,8 +22,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: 'Dashboard', icon: Home, path: '/dashboard' },
-    { name: 'Stocks', icon: Stock, path: '/stocks' },
+    { name: 'Dashboard', icon: LayoutDashboard, path: '/dashboard' },
+    { name: 'Stocks', icon: Activity, path: '/stocks' },
     { name: 'Portfolio', icon: Wallet, path: '/portfolio' },
     { name: 'Analytics', icon: PieChart, path: '/analytics' },
     { name: 'Trade', icon: TrendingUp, path: '/trade' },

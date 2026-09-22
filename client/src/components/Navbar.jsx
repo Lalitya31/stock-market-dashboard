@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
-  Home, 
-  Stock, 
+  LayoutDashboard, 
   PieChart, 
   Wallet, 
   TrendingUp, 
   History,
   List,
-  BarChart3,
   User,
   Search,
   Bell,
   Menu,
   X,
   Moon,
-  Sun
+  Sun,
+  Activity
 } from 'lucide-react';
 
 /**
@@ -31,8 +30,8 @@ const Navbar = ({
   const navigate = useNavigate();
 
   const menuItems = [
-    { name: 'Dashboard', icon: Home, path: '/dashboard' },
-    { name: 'Stocks', icon: Stock, path: '/stocks' },
+    { name: 'Dashboard', icon: LayoutDashboard, path: '/dashboard' },
+    { name: 'Stocks', icon: Activity, path: '/stocks' },
     { name: 'Portfolio', icon: Wallet, path: '/portfolio' },
     { name: 'Analytics', icon: PieChart, path: '/analytics' },
     { name: 'Trade', icon: TrendingUp, path: '/trade' },
